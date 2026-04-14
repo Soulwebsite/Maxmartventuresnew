@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Maxmartventures – Pure Natural Products Marketplace. Quality honey, paneer, jaggery, ghee and more with exclusive membership savings." />
+  <meta name="keywords" content="natural products, honey, paneer, jaggery, ghee, organic, Erode, Maxmartventures" />
+  <title>Maxmartventures – Pure Natural Products Marketplace</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <span class="logo-mark">M</span>
+        <span class="logo-text">Maxmart<em>ventures</em></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#products" class="nav-link">Products</a></li>
+        <li><a href="#membership" class="nav-link">Membership</a></li>
+        <li><a href="#vouchers" class="nav-link">Vouchers</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="cart-btn" id="cartBtn" aria-label="Open cart">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-blob blob1"></div>
+      <div class="hero-blob blob2"></div>
+      <div class="hero-blob blob3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">🌿 100% Natural &amp; Pure</div>
+      <h1 class="hero-title">Pure Natural Products<br /><span class="gradient-text">Marketplace</span></h1>
+      <p class="hero-subtitle">Quality products with exclusive membership savings.<br />Farm-fresh. Honest pricing. Delivered with care.</p>
+      <div class="hero-actions">
+        <a href="#products" class="btn btn-primary">
+          <span>Shop Products</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#membership" class="btn btn-outline">Join Membership</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">500+</span><span class="stat-label">Happy Customers</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">7</span><span class="stat-label">Natural Products</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">4</span><span class="stat-label">Membership Tiers</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card-float card-f1">
+        <img src="https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=120&h=120&fit=crop" alt="Honey" />
+        <div><p class="fc-name">Pure Honey</p><p class="fc-price">₹400</p></div>
+      </div>
+      <div class="hero-card-float card-f2">
+        <img src="https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?w=120&h=120&fit=crop" alt="Ghee" />
+        <div><p class="fc-name">Desi Ghee</p><p class="fc-price">₹150</p></div>
+      </div>
+      <div class="hero-center-img">
+        <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=420&h=420&fit=crop" alt="Natural Products" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SEARCH ========== -->
+  <section class="search-section">
+    <div class="container">
+      <div class="search-wrap glass">
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+        <input type="text" id="searchInput" class="search-input" placeholder="Search for honey, paneer, ghee…" autocomplete="off" />
+        <button class="search-clear" id="searchClear" aria-label="Clear search">✕</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PRODUCTS ========== -->
+  <section class="section products-section" id="products">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Our Collection</p>
+        <h2 class="section-title">Fresh Natural Products</h2>
+        <p class="section-desc">Sourced directly from trusted farmers and producers. Purity you can taste.</p>
+      </div>
+      <div class="products-grid" id="productsGrid">
+
+        <div class="product-card" data-name="Natural Honey" data-id="1">
+          <div class="product-img-wrap">
+            <img src="https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=400&h=300&fit=crop" alt="Natural Honey" loading="lazy" />
+            <div class="product-badge">Best Seller</div>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="quickAdd(1)">Quick Add</button>
+            </div>
+          </div>
+          <div class="product-body">
+            <p class="product-category">Sweeteners</p>
+            <h3 class="product-name">Natural Honey</h3>
+            <p class="product-size">1/4 Litre</p>
+            <div class="product-footer">
+              <div class="product-price"><span class="price-symbol">₹</span><span class="price-amount" data-base="400">400</span></div>
+              <div class="qty-wrap">
+                <button class="qty-btn" onclick="changeQty(this,-1)">−</button>
+                <input type="number" class="qty-input" value="1" min="1" max="99" readonly />
+                <button class="qty-btn" onclick="changeQty(this,1)">+</button>
+              </div>
+            </div>
+            <button class="add-cart-btn" onclick="addToCart(this,1,'Natural Honey',400,'1/4 Litre','https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=80&h=80&fit=crop')">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card" data-name="Paneer" data-id="2">
+          <div class="product-img-wrap">
+            <img src="https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?w=400&h=300&fit=crop" alt="Paneer" loading="lazy" />
+            <div class="product-badge new">Fresh</div>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="quickAdd(2)">Quick Add</button>
+            </div>
+          </div>
+          <div class="product-body">
+            <p class="product-category">Dairy</p>
+            <h3 class="product-name">Paneer</h3>
+            <p class="product-size">1/4 Kg</p>
+            <div class="product-footer">
+              <div class="product-price"><span class="price-symbol">₹</span><span class="price-amount" data-base="125">125</span></div>
+              <div class="qty-wrap">
+                <button class="qty-btn" onclick="changeQty(this,-1)">−</button>
+                <input type="number" class="qty-input" value="1" min="1" max="99" readonly />
+                <button class="qty-btn" onclick="changeQty(this,1)">+</button>
+              </div>
+            </div>
+            <button class="add-cart-btn" onclick="addToCart(this,2,'Paneer',125,'1/4 Kg','https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?w=80&h=80&fit=crop')">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card" data-name="Jaggery" data-id="3">
+          <div class="product-img-wrap">
+            <img src="https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?w=400&h=300&fit=crop" alt="Jaggery" loading="lazy" />
+            <div class="product-overlay">
+              <button class="quick-add" onclick="quickAdd(3)">Quick Add</button>
+            </div>
+          </div>
+          <div class="product-body">
+            <p class="product-category">Natural Sweeteners</p>
+            <h3 class="product-name">Jaggery</h3>
+            <p class="product-size">1 Kg</p>
+            <div class="product-footer">
+              <div class="product-price"><span class="price-symbol">₹</span><span class="price-amount" data-base="120">120</span></div>
+              <div class="qty-wrap">
+                <button class="qty-btn" onclick="changeQty(this,-1)">−</button>
+                <input type="number" class="qty-input" value="1" min="1" max="99" readonly />
+                <button class="qty-btn" onclick="changeQty(this,1)">+</button>
+              </div>
+            </div>
+            <button class="add-cart-btn" onclick="addToCart(this,3,'Jaggery',120,'1 Kg','https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?w=80&h=80&fit=crop')">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card" data-name="Charcoal" data-id="4">
+          <div class="product-img-wrap">
+            <img src="https://images.unsplash.com/photo-1599940778173-e276d4acb2bb?w=400&h=300&fit=crop" alt="Charcoal" loading="lazy" />
+            <div class="product-overlay">
+              <button class="quick-add" onclick="quickAdd(4)">Quick Add</button>
+            </div>
+          </div>
+          <div class="product-body">
+            <p class="product-category">Natural Care</p>
+            <h3 class="product-name">Charcoal</h3>
+            <p class="product-size">1/4 Kg</p>
+            <div class="product-footer">
+              <div class="product-price"><span class="price-symbol">₹</span><span class="price-amount" data-base="110">110</span></div>
+              <div class="qty-wrap">
+                <button class="qty-btn" onclick="changeQty(this,-1)">−</button>
+                <input type="number" class="qty-input" value="1" min="1" max="99" readonly />
+                <button class="qty-btn" onclick="changeQty(this,1)">+</button>
+              </div>
+            </div>
+            <button class="add-cart-btn" onclick="addToCart(this,4,'Charcoal',110,'1/4 Kg','https://images.unsplash.com/photo-1599940778173-e276d4acb2bb?w=80&h=80&fit=crop')">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card" data-name="Butter" data-id="5">
+          <div class="product-img-wrap">
+            <img src="https://images.unsplash.com/photo-1589985270826-4b7bb135bc9d?w=400&h=300&fit=crop" alt="Butter" loading="lazy" />
+            <div class="product-badge new">Popular</div>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="quickAdd(5)">Quick Add</button>
+            </div>
+          </div>
+          <div class="product-body">
+            <p class="product-category">Dairy</p>
+            <h3 class="product-name">Butter</h3>
+            <p class="product-size">1/4 Kg</p>
+            <div class="product-footer">
+              <div class="product-price"><span class="price-symbol">₹</span><span class="price-amount" data-base="160">160</span></div>
+              <div class="qty-wrap">
+                <button class="qty-btn" onclick="changeQty(this,-1)">−</button>
+                <input type="number" class="qty-input" value="1" min="1" max="99" readonly />
+                <button class="qty-btn" onclick="changeQty(this,1)">+</button>
+              </div>
+            </div>
+            <button class="add-cart-btn" onclick="addToCart(this,5,'Butter',160,'1/4 Kg','https://images.unsplash.com/photo-1589985270826-4b7bb135bc9d?w=80&h=80&fit=crop')">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card" data-name="Ghee" data-id="6">
+          <div class="product-img-wrap">
+            <img src="https://images.unsplash.com/photo-1626200419199-391ae4be7a41?w=400&h=300&fit=crop" alt="Ghee" loading="lazy" />
+            <div class="product-badge">Premium</div>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="quickAdd(6)">Quick Add</button>
+            </div>
+          </div>
+          <div class="product-body">
+            <p class="product-category">Dairy</p>
+            <h3 class="product-name">Ghee</h3>
+            <p class="product-size">1/4 Kg</p>
+            <div class="product-footer">
+              <div class="product-price"><span class="price-symbol">₹</span><span class="price-amount" data-base="150">150</span></div>
+              <div class="qty-wrap">
+                <button class="qty-btn" onclick="changeQty(this,-1)">−</button>
+                <input type="number" class="qty-input" value="1" min="1" max="99" readonly />
+                <button class="qty-btn" onclick="changeQty(this,1)">+</button>
+              </div>
+            </div>
+            <button class="add-cart-btn" onclick="addToCart(this,6,'Ghee',150,'1/4 Kg','https://images.unsplash.com/photo-1626200419199-391ae4be7a41?w=80&h=80&fit=crop')">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card" data-name="Cheese" data-id="7">
+          <div class="product-img-wrap">
+            <img src="https://images.unsplash.com/photo-1486297678162-eb2a19b0a318?w=400&h=300&fit=crop" alt="Cheese" loading="lazy" />
+            <div class="product-overlay">
+              <button class="quick-add" onclick="quickAdd(7)">Quick Add</button>
+            </div>
+          </div>
+          <div class="product-body">
+            <p class="product-category">Dairy</p>
+            <h3 class="product-name">Cheese</h3>
+            <p class="product-size">1/4 Kg</p>
+            <div class="product-footer">
+              <div class="product-price"><span class="price-symbol">₹</span><span class="price-amount" data-base="190">190</span></div>
+              <div class="qty-wrap">
+                <button class="qty-btn" onclick="changeQty(this,-1)">−</button>
+                <input type="number" class="qty-input" value="1" min="1" max="99" readonly />
+                <button class="qty-btn" onclick="changeQty(this,1)">+</button>
+              </div>
+            </div>
+            <button class="add-cart-btn" onclick="addToCart(this,7,'Cheese',190,'1/4 Kg','https://images.unsplash.com/photo-1486297678162-eb2a19b0a318?w=80&h=80&fit=crop')">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+      </div>
+      <p class="no-results" id="noResults" style="display:none;">No products found. Try a different search.</p>
+    </div>
+  </section>
+
+  <!-- ========== MEMBERSHIP ========== -->
+  <section class="section membership-section" id="membership">
+    <div class="container">
+      <div class="section-header light">
+        <p class="section-tag">Exclusive Benefits</p>
+        <h2 class="section-title">Membership Plans</h2>
+        <p class="section-desc">Save more every time you shop. Choose the plan that fits your lifestyle.</p>
+      </div>
+      <div class="membership-grid">
+
+        <div class="membership-card bronze" data-tier="bronze" data-discount="5" data-price="5000">
+          <div class="mc-icon">🥉</div>
+          <h3 class="mc-tier">Bronze</h3>
+          <div class="mc-price">₹5,000<span>/year</span></div>
+          <ul class="mc-perks">
+            <li>✓ 5% discount on all products</li>
+            <li>✓ Year-round savings</li>
+            <li>✓ Priority support</li>
+            <li>✓ Exclusive member offers</li>
+          </ul>
+          <div class="mc-discount-badge">Save 5%</div>
+          <button class="mc-btn" onclick="selectMembership('bronze',5,5000)">Join Now</button>
+        </div>
+
+        <div class="membership-card gold" data-tier="gold" data-discount="7" data-price="15000">
+          <div class="mc-icon">🥇</div>
+          <h3 class="mc-tier">Gold</h3>
+          <div class="mc-price">₹15,000<span>/year</span></div>
+          <ul class="mc-perks">
+            <li>✓ 7% discount on all products</li>
+            <li>✓ Year-round savings</li>
+            <li>✓ Free delivery on orders</li>
+            <li>✓ Early access to new products</li>
+          </ul>
+          <div class="mc-discount-badge">Save 7%</div>
+          <button class="mc-btn" onclick="selectMembership('gold',7,15000)">Join Now</button>
+        </div>
+
+        <div class="membership-card diamond featured" data-tier="diamond" data-discount="10" data-price="25000">
+          <div class="mc-ribbon">Most Popular</div>
+          <div class="mc-icon">💎</div>
+          <h3 class="mc-tier">Diamond</h3>
+          <div class="mc-price">₹25,000<span>/year</span></div>
+          <ul class="mc-perks">
+            <li>✓ 10% discount on all products</li>
+            <li>✓ Year-round savings</li>
+            <li>✓ Free delivery on all orders</li>
+            <li>✓ Personal account manager</li>
+          </ul>
+          <div class="mc-discount-badge">Save 10%</div>
+          <button class="mc-btn" onclick="selectMembership('diamond',10,25000)">Join Now</button>
+        </div>
+
+        <div class="membership-card platinum" data-tier="platinum" data-discount="12" data-price="50000">
+          <div class="mc-icon">🏆</div>
+          <h3 class="mc-tier">Platinum</h3>
+          <div class="mc-price">₹50,000<span>/year</span></div>
+          <ul class="mc-perks">
+            <li>✓ 12% discount on all products</li>
+            <li>✓ Year-round savings</li>
+            <li>✓ VIP support 24/7</li>
+            <li>✓ Custom bulk orders</li>
+          </ul>
+          <div class="mc-discount-badge">Save 12%</div>
+          <button class="mc-btn" onclick="selectMembership('platinum',12,50000)">Join Now</button>
+        </div>
+
+      </div>
+      <div class="membership-active-banner" id="membershipBanner" style="display:none;">
+        <span id="membershipBannerText"></span>
+        <button onclick="removeMembership()">Remove</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== VOUCHERS ========== -->
+  <section class="section vouchers-section" id="vouchers">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Special Deals</p>
+        <h2 class="section-title">Voucher Deals</h2>
+        <p class="section-desc">Buy a voucher, get more value. Limited time offers.</p>
+      </div>
+      <div class="vouchers-grid">
+
+        <div class="voucher-card" data-voucher="bliss" data-voucher-price="1000" data-voucher-value="1100">
+          <div class="voucher-badge">Limited Deal</div>
+          <div class="voucher-pattern"></div>
+          <div class="voucher-left">
+            <div class="voucher-icon">🎁</div>
+            <h3 class="voucher-name">Bliss Voucher</h3>
+            <p class="voucher-tagline">Best value for everyday shopping</p>
+          </div>
+          <div class="voucher-divider">
+            <div class="notch top"></div>
+            <div class="dashed-line"></div>
+            <div class="notch bottom"></div>
+          </div>
+          <div class="voucher-right">
+            <p class="v-pay-label">Pay</p>
+            <p class="v-pay-price">₹1,000</p>
+            <p class="v-get-label">Get worth</p>
+            <p class="v-get-price">₹1,100</p>
+            <button class="v-btn" onclick="addVoucherToCart('Bliss Voucher',1000,1100)">Buy Voucher</button>
+          </div>
+        </div>
+
+        <div class="voucher-card gold-voucher" data-voucher="gold-bliss" data-voucher-price="3000" data-voucher-value="3500">
+          <div class="voucher-badge gold">Best Value</div>
+          <div class="voucher-pattern"></div>
+          <div class="voucher-left">
+            <div class="voucher-icon">🌟</div>
+            <h3 class="voucher-name">Gold Bliss Voucher</h3>
+            <p class="voucher-tagline">Maximum savings for bulk shoppers</p>
+          </div>
+          <div class="voucher-divider">
+            <div class="notch top"></div>
+            <div class="dashed-line"></div>
+            <div class="notch bottom"></div>
+          </div>
+          <div class="voucher-right">
+            <p class="v-pay-label">Pay</p>
+            <p class="v-pay-price">₹3,000</p>
+            <p class="v-get-label">Get worth</p>
+            <p class="v-get-price">₹3,500</p>
+            <button class="v-btn gold" onclick="addVoucherToCart('Gold Bliss Voucher',3000,3500)">Buy Voucher</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Reach Us</p>
+        <h2 class="section-title">Get in Touch</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card glass">
+          <div class="contact-icon">📍</div>
+          <h4>Our Address</h4>
+          <p>49/1 ASC Complex, 1st Floor,<br />Nachiyappa Road, Opp. ESAF Bank,<br />Erode – 638001</p>
+        </div>
+        <div class="contact-card glass">
+          <div class="contact-icon">📞</div>
+          <h4>Phone / WhatsApp</h4>
+          <p><a href="tel:+918754502061">+91 87545 02061</a></p>
+          <a href="https://wa.me/918754502061" class="wa-btn" target="_blank">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.97 1.956C6.35 1.956 1.77 6.537 1.77 12.155c0 1.868.496 3.62 1.363 5.132L1.77 22.044l4.891-1.339a10.204 10.204 0 005.31 1.474h.004c5.617 0 10.197-4.581 10.197-10.2 0-5.617-4.58-10.023-10.202-10.023zm0 18.664h-.003a8.48 8.48 0 01-4.319-1.18l-.31-.184-3.21.878.864-3.14-.202-.322a8.479 8.479 0 01-1.3-4.517c0-4.687 3.816-8.502 8.484-8.502 2.267 0 4.397.883 5.997 2.487a8.444 8.444 0 012.487 5.997c-.002 4.688-3.818 8.483-8.488 8.483z"/></svg>
+            Chat on WhatsApp
+          </a>
+        </div>
+        <div class="contact-card glass">
+          <div class="contact-icon">📋</div>
+          <h4>Business Details</h4>
+          <p><strong>GST:</strong> 33EEPPM8083C1Z8</p>
+          <p><strong>Proprietor:</strong> Manikandan</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" id="footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="logo-mark">M</span>
+            <span class="logo-text">Maxmart<em>ventures</em></span>
+          </div>
+          <p class="footer-tagline">Your trusted source for pure natural products. Quality guaranteed, every order.</p>
+          <a href="https://wa.me/918754502061" class="wa-btn sm" target="_blank">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.97 1.956C6.35 1.956 1.77 6.537 1.77 12.155c0 1.868.496 3.62 1.363 5.132L1.77 22.044l4.891-1.339a10.204 10.204 0 005.31 1.474h.004c5.617 0 10.197-4.581 10.197-10.2 0-5.617-4.58-10.023-10.202-10.023zm0 18.664h-.003a8.48 8.48 0 01-4.319-1.18l-.31-.184-3.21.878.864-3.14-.202-.322a8.479 8.479 0 01-1.3-4.517c0-4.687 3.816-8.502 8.484-8.502 2.267 0 4.397.883 5.997 2.487a8.444 8.444 0 012.487 5.997c-.002 4.688-3.818 8.483-8.488 8.483z"/></svg>
+            WhatsApp Us
+          </a>
+        </div>
+        <div class="footer-col">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#membership">Membership</a></li>
+            <li><a href="#vouchers">Vouchers</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Business Info</h5>
+          <ul class="footer-info">
+            <li><strong>Maxmartventures</strong></li>
+            <li>Proprietor: Manikandan</li>
+            <li>49/1 ASC Complex, 1st Floor</li>
+            <li>Nachiyappa Road, Opp. ESAF Bank</li>
+            <li>Erode – 638001</li>
+            <li><a href="tel:+918754502061">📞 8754502061</a></li>
+            <li>GST: 33EEPPM8083C1Z8</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2026 Maxmartventures. All Rights Reserved. | Proprietor: Manikandan | GST: 33EEPPM8083C1Z8</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== CART PANEL ========== -->
+  <div class="cart-overlay" id="cartOverlay" onclick="closeCart()"></div>
+  <div class="cart-panel" id="cartPanel">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <div class="cart-header-right">
+        <span class="membership-badge-cart" id="membershipBadgeCart" style="display:none;"></span>
+        <button class="cart-close" onclick="closeCart()" aria-label="Close cart">✕</button>
+      </div>
+    </div>
+    <div class="cart-body" id="cartBody">
+      <div class="cart-empty" id="cartEmpty">
+        <div class="cart-empty-icon">🛒</div>
+        <p>Your cart is empty</p>
+        <a href="#products" onclick="closeCart()">Browse Products</a>
+      </div>
+    </div>
+    <div class="cart-footer" id="cartFooter" style="display:none;">
+      <div class="cart-summary">
+        <div class="summary-row"><span>Subtotal</span><span id="cartSubtotal">₹0</span></div>
+        <div class="summary-row discount-row" id="discountRow" style="display:none;"><span id="discountLabel">Membership Discount</span><span id="cartDiscount" class="discount-amount">-₹0</span></div>
+        <div class="summary-row total-row"><span>Total</span><span id="cartTotal">₹0</span></div>
+      </div>
+      <button class="checkout-btn" onclick="proceedToCheckout()">Proceed to Checkout</button>
+    </div>
+  </div>
+
+  <!-- ========== CHECKOUT MODAL ========== -->
+  <div class="modal-overlay" id="checkoutOverlay">
+    <div class="modal checkout-modal" id="checkoutModal">
+      <button class="modal-close" onclick="closeCheckout()">✕</button>
+      <h2 class="modal-title">Order Summary</h2>
+      <div class="checkout-body" id="checkoutBody"></div>
+      <div class="checkout-payment">
+        <h3>Scan QR Code to Complete Payment</h3>
+        <div class="qr-wrap">
+          <img src="qr.png" alt="Payment QR Code" class="qr-img" onerror="this.onerror=null;this.src='https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=upi://pay?pa=8754502061@upi&pn=Maxmartventures';" />
+        </div>
+        <div class="payment-steps">
+          <div class="pay-step"><span class="step-num">1</span><p>Scan QR Code</p></div>
+          <div class="pay-step"><span class="step-num">2</span><p>Pay the amount</p></div>
+          <div class="pay-step"><span class="step-num">3</span><p>Take screenshot</p></div>
+          <div class="pay-step"><span class="step-num">4</span><p>Send on WhatsApp</p></div>
+        </div>
+        <a href="https://wa.me/918754502061" target="_blank" class="wa-btn full">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.97 1.956C6.35 1.956 1.77 6.537 1.77 12.155c0 1.868.496 3.62 1.363 5.132L1.77 22.044l4.891-1.339a10.204 10.204 0 005.31 1.474h.004c5.617 0 10.197-4.581 10.197-10.2 0-5.617-4.58-10.023-10.202-10.023zm0 18.664h-.003a8.48 8.48 0 01-4.319-1.18l-.31-.184-3.21.878.864-3.14-.202-.322a8.479 8.479 0 01-1.3-4.517c0-4.687 3.816-8.502 8.484-8.502 2.267 0 4.397.883 5.997 2.487a8.444 8.444 0 012.487 5.997c-.002 4.688-3.818 8.483-8.488 8.483z"/></svg>
+          Send Screenshot on WhatsApp
+        </a>
+        <button class="place-order-btn" onclick="placeOrder()">Place Order &amp; Generate Invoice</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== INVOICE MODAL ========== -->
+  <div class="modal-overlay" id="invoiceOverlay">
+    <div class="modal invoice-modal" id="invoiceModal">
+      <button class="modal-close" onclick="closeInvoice()">✕</button>
+      <div class="invoice-body" id="invoiceBody"></div>
+      <div class="invoice-actions">
+        <button class="btn btn-primary" onclick="window.print()">Print Invoice</button>
+        <button class="btn btn-outline" onclick="closeInvoice()">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== TOAST ========== -->
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
